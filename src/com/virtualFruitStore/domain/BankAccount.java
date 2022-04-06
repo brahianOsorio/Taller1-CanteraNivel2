@@ -3,46 +3,76 @@ package com.virtualFruitStore.domain;
 /**
  * Esta clase simboliza una cunta bancaria y sus datos.
  * 
- * @author Brahian Stiven Osorio Velasquez
- *
+ * BankAccount myBankAccount = new BankAccount();
+ * myBankAccount.getAccountNumber();
+ * 
+ * @version 1.00.000 2022-04-05
+ * 
+ * @author Brahian Stiven Osorio brahianstiven.osorio@gmail.com
+ * 
+ * @since 1.00.000 2022-04-05
  */
 public class BankAccount {
 	/**
-	 * este atributo corresponde al numero de la cuenta bancaria
+	 * Este atributo corresponde al numero de la cuenta bancaria.
 	 */
 	private int accountNumber;
 	/**
-	 * este atributo corresponde al estado de activacion de la cuenta
+	 * Este atributo corresponde al estado de activacion de la cuenta.
 	 */
 	protected boolean activated;
+
 	/**
-	 * obtenemos la caracteristica numero de la cuanta bancaria
+	 * Obtenemos la caracteristica numero de la cuanta bancaria.
 	 * 
-	 * @return el atributo numero de la cuenta bancaria
+	 * @return el atributo numero de la cuenta bancaria.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public int getAccountNumber() {
 		return accountNumber;
 	}
+
 	/**
-	 * inicializamos el numero de la cuenta bancaria 
+	 * Inicializamos el numero de la cuenta bancaria.
 	 * 
-	 * @param accountNumber este parametro es el numero de la cuenta bancaria
+	 * @param accountNumber este parametro es el numero de la cuenta bancaria.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setAccountNumber(int accountNumber) {
 		this.accountNumber = accountNumber;
 	}
+
 	/**
-	 * obtenemos el estado de activacion de la cuenta bancaria
+	 * Obtenemos el estado de activacion de la cuenta bancaria.
 	 * 
-	 * @return el estado de la cuenta 
+	 * @return el estado de la cuenta.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public boolean isActivated() {
 		return activated;
 	}
+
 	/**
-	 * inicializamos el estado de la cuenta bancaria 
+	 * Inicializamos el estado de la cuenta bancaria.
 	 * 
-	 * @param activated este parametro es el estado de la cuenta bancaria 
+	 * @param activated este parametro es el estado de la cuenta bancaria.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setActivated(boolean activated) {
 		this.activated = activated;

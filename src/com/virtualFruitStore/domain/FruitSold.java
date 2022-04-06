@@ -1,42 +1,79 @@
 package com.virtualFruitStore.domain;
+
 /**
- * esta clase complementa las compras hechas por el usuario 
- * @author Brahian Stiven Osorio 
- *
+ * 
+ * Esta clase complementa las compras hechas por el usuario.
+ * 
+ * FruitSold myFruitSold = new FruitSold();
+ * myFruitSold.getFruit();
+ * 
+ * @version 1.00.000 2022-04-05
+ * 
+ * @author Brahian Stiven Osorio brahianstiven.osorio@gmail.com
+ * 
+ * @since 1.00.000 2022-04-05
  */
 public class FruitSold {
 	/**
-	 * este atributo representa los datos de la fruta 
+	 * Este atributo representa los datos de la fruta.
 	 */
-	public Fruit fruit ;
+	public Fruit fruit;
 	/**
-	 * este atributo representa la cantidad de la fruta que el cliente compra
+	 * Este atributo representa la cantidad de la fruta que el cliente compra.
 	 */
-	public int quantity ;
+	public int quantity;
+
 	/**
-	 * obtenemos la fruta comprada 
-	 * @return obtenemos el objeto fruta de la compra
+	 * Obtenemos la fruta comprada.
+	 * 
+	 * @return obtenemos el objeto fruta de la compra.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public Fruit getFruit() {
 		return fruit;
 	}
+
 	/**
-	 * inializamos la fruta que se va a comprar 
-	 * @param fruit este objeto es la fruta que se va a comprar
+	 * Inializamos la fruta que se va a comprar.
+	 * 
+	 * @param fruit este objeto es la fruta que se va a comprar.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setFruit(Fruit fruit) {
 		this.fruit = fruit;
 	}
+
 	/**
-	 * obtenemos la cantidad comprada de la fruta 
-	 * @return cantidad de la fruta 
+	 * Obtenemos la cantidad comprada de la fruta.
+	 * 
+	 * @return cantidad de la fruta.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public int getQuantity() {
 		return quantity;
 	}
+
 	/**
-	 * inicializamos la cantidad de la fruta a comprar
-	 * @param quantity es la cantidad a comprar de la fruta
+	 * Inicializamos la cantidad de la fruta a comprar.
+	 * 
+	 * @param quantity es la cantidad a comprar de la fruta.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;

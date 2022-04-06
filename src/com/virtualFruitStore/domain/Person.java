@@ -3,129 +3,209 @@ package com.virtualFruitStore.domain;
 import java.util.Date;
 
 /**
+ * 
  * Esta clase simboliza una persona y sus caracteristicas
  * 
- * @author Brahian Stiven Osorio Velasquez
- *
+ * Person myPerson = new Person();
+ * myPerson.getLastNameOne();
+ * 
+ * @version 1.00.000 2022-04-05
+ * 
+ * @author Brahian Stiven Osorio brahianstiven.osorio@gmail.com
+ * 
+ * @since 1.00.000 2022-04-05
  */
 public class Person {
 
 	/**
 	 * Estos atributos aparecen como los nombres y el género de la persona.
 	 */
-	public String name, lastName1, lastName2, gender;
+	public String name;
 	/**
-	 * este atributo aparece como la fecha de nacimiento de la persona.
+	 * Este atibuto hace referencia al primer apellido de la persona.
+	 */
+	public String lastNameOne;
+	/**
+	 * Este atibuto hace referencia al segundo apellido de la persona.
+	 */
+	public String lastNameTwo;
+	/**
+	 * Este atributo hace referencia al genero al cual pertenece la persona.
+	 */
+	public String gender;
+	/**
+	 * Este atributo aparece como la fecha de nacimiento de la persona.
 	 */
 	public Date dateBirth;
 	/**
-	 * este atributo aparece como la altura de la persona.
+	 * Este atributo aparece como la altura de la persona.
 	 */
 	public float height;
 
 	/**
-	 * obtenemos la caracteristica genero de la persona
+	 * Obtenemos la caracteristica genero de la persona.
 	 * 
-	 * @return el atributo genero de nuestra clase
+	 * @return el atributo genero de nuestra clase.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public String getGender() {
 		return gender;
 	}
 
 	/**
-	 * inicializamos la caracteristica genero de la persona
+	 * Inicializamos la caracteristica genero de la persona.
 	 * 
-	 * @param este parametro es el genero que tiene la persona
+	 * @param este parametro es el genero que tiene la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
 
 	/**
-	 * obtenemos el nombre
+	 * Obtenemos el nombre.
 	 * 
-	 * @return el nombre de la persona
+	 * @return el nombre de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * inicializamos el nombre
+	 * Inicializamos el nombre.
 	 * 
-	 * @param name es el parametro que tenemos para el nombre de la persona
+	 * @param name es el parametro que tenemos para el nombre de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * obtenemos el primer apellido de la persona
+	 * Obtenemos el primer apellido de la persona.
 	 * 
-	 * @return el primer apellido de la persona
+	 * @return el primer apellido de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
-	public String getLastName1() {
-		return lastName1;
+	public String getLastNameOne() {
+		return lastNameOne;
 	}
 
 	/**
-	 * inicializamos el primer apellido
+	 * Inicializamos el primer apellido.
 	 * 
-	 * @param lastName1 este parametro pertenece al primer apellido de la persona
+	 * @param lastNameOne este parametro pertenece al primer apellido de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
-	public void setLastName1(String lastName1) {
-		this.lastName1 = lastName1;
+	public void setLastNameOne(String lastNameOne) {
+		this.lastNameOne = lastNameOne;
 	}
 
 	/**
-	 * obtenemos el segundo apellido de la persona
+	 * Obtenemos el segundo apellido de la persona.
 	 * 
-	 * @return el segundo apellido de la persona
+	 * @return el segundo apellido de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
-	public String getLastName2() {
-		return lastName2;
+	public String getLastNameTwo() {
+		return lastNameTwo;
 	}
 
 	/**
-	 * inicializamos el segundo apellido
+	 * Inicializamos el segundo apellido.
 	 * 
-	 * @param lastName2 este parametro pertenece al segundo apellido de la persona
+	 * @param lastNameTwo este parametro pertenece al segundo apellido de la
+	 *                    persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
-	public void setLastName2(String lastName2) {
-		this.lastName2 = lastName2;
+	public void setLastNameTwo(String lastNameTwo) {
+		this.lastNameTwo = lastNameTwo;
 	}
 
 	/**
-	 * obtenemos la fecha de nacimiento de la persona
+	 * Obtenemos la fecha de nacimiento de la persona.
 	 * 
-	 * @return la fecha de nacimiento de la persona
+	 * @return la fecha de nacimiento de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public Date getDateBirth() {
 		return dateBirth;
 	}
 
 	/**
-	 * inicializamos la fecha de nacimiento de la persona.
+	 * Inicializamos la fecha de nacimiento de la persona.
 	 * 
-	 * @param dateBirth es el parametro de la fecha de nacimiento de la persona
+	 * @param dateBirth es el parametro de la fecha de nacimiento de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setDateBirth(Date dateBirth) {
 		this.dateBirth = dateBirth;
 	}
 
 	/**
-	 * obtenemos la altura de la persona
+	 * Obtenemos la altura de la persona.
 	 * 
-	 * @return la altura de la persona
+	 * @return la altura de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public float getHeight() {
 		return height;
 	}
 
 	/**
-	 * inicializamos la altura de la persona.
+	 * Inicializamos la altura de la persona.
 	 * 
 	 * @param height es el parametro de la altura de la persona.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setHeight(float height) {
 		this.height = height;

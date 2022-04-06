@@ -4,38 +4,49 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * esta clase simboliza una factura y sus datos
+ * Esta clase simboliza una factura y sus datos.
  * 
- * @author Brahian Stiven Osorio Velasquez
- *
+ * Bill myBill = new Bill();
+ * myBill.getfinalAmount();
+ * 
+ * @version 1.00.000 2022-04-05
+ * 
+ * @author Brahian Stiven Osorio brahianstiven.osorio@gmail.com
+ * 
+ * @since 1.00.000 2022-04-05
  */
 public class Bill {
 	/**
-	 * este atributo contiene el numero de factura
+	 * Este atributo contiene el numero de factura.
 	 */
 	private int billNumber;
 	/**
-	 * este atributo contiene la fecha en la que se hace la factura
+	 * Este atributo contiene la fecha en la que se hace la factura.
 	 */
 	public Date date;
 	/**
-	 * este atributo contiene la infromacion del cliente
+	 * Este atributo contiene la infromacion del cliente.
 	 */
 	private Client client;
 	/**
-	 * este atributo contiene la lista de frutas que el cliente compro
+	 * Este atributo contiene la lista de frutas que el cliente compro.
 	 */
 	public ArrayList<FruitSold> shoppingList;
 	/**
-	 * este atributo contiene el acomulado final de la compra
+	 * Este atributo contiene el acomulado final de la compra.
 	 */
 	public double finalAmount;
 
 	/**
-	 * obtenemos el acomulado final de la factura
+	 * Obtenemos el acomulado final de la factura.
 	 * 
 	 * @return la suma del precio final de todas las frutas, el precio final lo
-	 *         obtiene multiplicando la cantidad por el precio de cada fruta. 
+	 *         obtiene multiplicando la cantidad por el precio de cada fruta.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public double getfinalAmount() {
 
@@ -43,74 +54,113 @@ public class Bill {
 	}
 
 	/**
-	 * obtenemos el numero de la factura
+	 * Obtenemos el numero de la factura.
 	 * 
-	 * @return el numero de factura
+	 * @return retornamos el numero de la factura
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public int getBillNumber() {
 		return billNumber;
 	}
 
 	/**
-	 * inicializamos el numero de factura
+	 * Inicializamos el numero de factura.
 	 * 
 	 * @param billNumber este parametro es el numero de factura que va a tener la
-	 *                   factura
+	 *                   factura.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
-
 	public void setBillNumber(int billNumber) {
 		this.billNumber = billNumber;
 	}
 
 	/**
-	 * obtenemos la fecha de la compra-factura
+	 * Obtenemos la fecha de la compra-factura.
 	 * 
-	 * @return la fecha de la factura
+	 * @return la fecha de la factura.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public Date getDate() {
 		return date;
 	}
 
 	/**
-	 * inicializamos la fecha de la factura
+	 * Inicializamos la fecha de la factura.
 	 * 
-	 * @param date este parametro es la fecha en la que se hace la factura
+	 * @param date este parametro es la fecha en la que se hace la factura.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setDate(Date date) {
 		this.date = date;
 	}
 
 	/**
-	 * obtenemos el cliente de la factura
+	 * Obtenemos el cliente de la factura.
 	 * 
-	 * @return el cliente el cual realiza la compra
+	 * @return el cliente el cual realiza la compra.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public Client getClient() {
 		return client;
 	}
 
 	/**
-	 * inicializamos al cliente de la factura
+	 * Inicializamos al cliente de la factura.
 	 * 
-	 * @param client es el objeto el cual contiene la informacion del cliente
+	 * @param client es el objeto el cual contiene la informacion del cliente.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setClient(Client client) {
 		this.client = client;
 	}
 
 	/**
-	 * obtenemos la lista de frutas compradas que hay en la factura
+	 * Obtenemos la lista de frutas compradas que hay en la factura.
 	 * 
-	 * @return una lista de frutas compradas
+	 * @return una lista de frutas compradas.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public ArrayList<FruitSold> getShoppingList() {
 		return shoppingList;
 	}
 
 	/**
-	 * inicializamos la lista y añadimos las frutas compradas
+	 * Inicializamos la lista y añadimos las frutas compradas.
 	 * 
-	 * @param shoppingList
+	 * @param shoppingList es la lista de compras que tiene la factura.
+	 * 
+	 * @author Brahian Stiven Osorio Velasquez brahianstiven.osorio@gmail.com
+	 * 
+	 * @since 1.00.000 2022-04-05
+	 * 
 	 */
 	public void setShoppingList(FruitSold shoppingList) {
 		this.shoppingList.add(shoppingList);
